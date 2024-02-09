@@ -1,8 +1,9 @@
-version: "2.3"
+version: "3"
 services:
   msu:
     build: .
     image: marvell_msu:1.2
+    hostname: msu
     restart: unless-stopped
     volumes:
       - /dev:/dev

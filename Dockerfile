@@ -16,6 +16,7 @@ FROM fedora:31 AS final
 # libxcrypt-compat, libnsl: apache webserver for MSU
 # procps: install script
 RUN yum install -y \
+	hostname \
 	libxcrypt-compat \
 	libnsl \
 	procps \
